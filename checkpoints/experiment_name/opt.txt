@@ -1,0 +1,47 @@
+------------ Options -------------
+adversarial_loss_p: 1
+aspect_ratio: 1.0
+batchSize: 9
+checkpoints_dir: ./checkpoints
+crop_mode: square
+dataroot: ../datasets/
+dataset_mode: ADNI
+display_id: 0
+display_port: 8097
+display_winsize: 256
+fineSize: 256
+fineSizeH: 256
+fineSizeW: 512
+gpu_ids: [0]
+how_many: 999999
+init_type: normal
+input_nc: 1
+isTrain: False
+loadSize: 256
+loadSizeH: 286
+loadSizeW: 542
+max_dataset_size: inf
+model: pwfharmonization
+nThreads: 2
+n_layers_D: 3
+name: experiment_name
+ndf: 64
+ngf: 64
+no_dropout: True
+no_flip: False
+norm: instance
+npf: 64
+ntest: inf
+output_nc: 1
+phase: test
+resize_mode: square
+resize_or_crop: resize_and_crop
+results_dir: ./results/
+serial_batches: False
+split:
+which_direction: AtoB
+which_epoch: latest
+which_model_netD: basic
+which_model_netG: resnet_6blocks
+which_model_netP: unet_256
+-------------- End ----------------

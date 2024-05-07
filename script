@@ -1,0 +1,4 @@
+#train
+python train.py -dataroot ../datasets --model pwfharmonization --dataset_mode unaligned_scale --input_nc 1 --output_nc 1 --batchSize 9 --resize_mode square --loadSize 256 --loadSizeH 256 --loadSizeW 256 --fineSize 256 --fineSizeH 256 --fineSizeW 256 --no_dropout --name your_experiment_name --which_model_netG resnet_6blocks
+#inference
+python test.py --dataroot ../datasets/ --model pwfharmonization --dataset_mode unaligned_scale --input_nc 1 --output_nc 1 --name your_experiment_name --loadSize 256 --resize_mode square --fineSize 256 --crop_mode square --which_model_netG resnet_6blocks --which_epoch latest --no_dropout
